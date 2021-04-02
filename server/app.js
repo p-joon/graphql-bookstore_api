@@ -4,9 +4,12 @@ const express = require('express');
 const mongoose = require('mongoose');
 const schema = require('./schema/schema');
 const constants = require('./constants.js');
+const cors = require('cors');
 
 const app = express();
 
+// allow cross-origin requests
+app.use(cors());
 
 // connect to MongoDB cloud db
 mongoose.connect(constants.DB_LINK);
