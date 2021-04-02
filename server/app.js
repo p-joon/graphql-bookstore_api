@@ -7,7 +7,8 @@ const app = express();
 
 // any request to '/graphql' will be handled by grpahqlHTTP() function
 app.use('/graphql', graphqlHTTP({
-    schema
+    schema,
+    graphiql: true
 }));
 
 app.listen(4000, () => {
