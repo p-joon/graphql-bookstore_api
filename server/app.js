@@ -1,9 +1,18 @@
-const express = require('express');
 const { graphqlHTTP } = require('express-graphql');
-const schema = require('./schema/schema');
 const _ = require('lodash');
+const express = require('express');
+const mongoose = require('mongoose');
+const schema = require('./schema/schema');
+const constants = require('./constants.js');
 
 const app = express();
+
+
+// connect to MongoDB cloud db
+mongoose.connect(constants.DB_LINK);
+mongoose.connection.once('open', () => {
+    console.log('connected to database'); 
+});
 
 // any request to '/graphql' will be handled by grpahqlHTTP() function
 app.use('/graphql', graphqlHTTP({
