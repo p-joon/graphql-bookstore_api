@@ -1,9 +1,11 @@
+[GraphQL Full Course - Novice to Expert](https://www.youtube.com/watch?v=ed8SzALpx1Q&t=1268s&ab_channel=freeCodeCamp.org)
+
+### Requirements
+- [nodeJS](https://nodejs.org/en/)
+- [mLab](https://mlab.com/)
+- A cluster and database user at [MongoDB Cloud](https://cloud.mongodb.com/)
+
 ### Commands
 - Use `node app` or `nodemon app` to start the app.
   - To install nodemon, run `npm install nodemon -g`
 
-
-### Requirements
-- `npm install graphql express-graphql` 
-- [graphql](https://www.npmjs.com/package/graphql): GraphQL.js (`npm install graphql`)
-- [express-graphql](https://www.npmjs.com/package/express-graphql): GraphQL HTTP Server Middleware
