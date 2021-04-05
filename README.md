@@ -2,7 +2,6 @@
 
 ### Requirements
 - [nodeJS](https://nodejs.org/en/)
-- [mLab](https://mlab.com/)
 - A cluster and database user at [MongoDB Cloud](https://cloud.mongodb.com/)
 
 ### Commands
